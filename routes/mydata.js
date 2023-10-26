@@ -1,12 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var sum = 0;
-var more=0;
-/* GET users listing. */
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  more = more+1;
-  sum=sum+more;
-  res.send(`sum is : ${sum}`);
+  res.render('mydata', { title: 'Ram Niteesh Reddy Bandi' });
 });
 
 module.exports = router;
